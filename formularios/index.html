@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Desenvolvedores</title>
+</head>
+
+<body>
+    <div>
+        <h1>Cadastro de DEVs</h1>
+        <p>Complete suas informações</p>
+        <br>
+    </div>
+
+    <!-- Início do formulário -->
+    <form>
+
+        <fieldset>
+            <div>
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome">
+            </div>
+
+            <div>
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome">
+            </div>
+        </fieldset>
+
+        <!-- Campo de email-->
+        <div>
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email">
+        </div>
+
+        <!-- Campo de desenvolvimento web com 3 opções para escolha -->
+        <div>
+            <label><strong>Qual aplicação você desenvolve?</strong></label>
+            <label><input type="radio" value="frontend">Front-end</label>
+            <label><input type="radio" value="backend">Back-end</label>
+            <label><input type="radio" value="fullstack">Fullstack</label>
+        </div>
+
+        <!-- Campo de senioridade com 3 opções para escolha -->
+        <div>
+            <label for="senioridade"><strong>Senioridade</strong></label>
+            <select>
+                <option>Selecione</option>
+                <option>Júnior</option>
+                <option>Pleno</option>
+                <option>Sênior</option>
+            </select>
+        </div>
+
+        <fieldset>
+
+            <!-- Campo de tecnologias para escolher -->
+            <div>
+                <label><strong>Selecione as tecnologias que utiliza:</strong></label><br><br>
+                <input type="checkbox" name="HTML">
+                <label> HTML</label>
+                <input type="checkbox" name="CSS">
+                <label> CSS</label>
+                <input type="checkbox" name="JavaScript">
+                <label> JavaScript</label>
+                <input type="checkbox" name="PHP">
+                <label> PHP</label>
+                <input type="checkbox" name="C#">
+                <label> C#</label>
+                <input type="checkbox" name="Phyton">
+                <label> Python</label>
+                <input type="checkbox" name="Java">
+                <label> Java</label>
+            </div>
+        </fieldset>
+
+        <!-- Caixa de texto -->
+        <div>
+            <br>
+            <label><strong>Conte mais da sua experiência: </strong></label>
+            <textarea rows="6" cols="50" name="experiencia"></textarea>
+        </div>
+
+        <!-- Botão para enviar o formulário -->
+        <button type="submit">Concluído</button>
+
+    </form>
+    
+</body>
+
+</html>
